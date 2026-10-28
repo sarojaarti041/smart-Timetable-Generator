@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f7fb;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.navbar {
+  padding: 15px 0;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+.card-header {
+  border-radius: 12px 12px 0 0 !important;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-card h6 {
+  color: #777;
+}
+
+.dashboard-card h2 {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.table {
+  vertical-align: middle;
+}
+
+.timetable th {
+  background: #212529;
+  color: white;
+  min-width: 150px;
+  vertical-align: middle;
+}
+
+.timetable td {
+  height: 80px;
+  font-weight: 500;
+  min-width: 150px;
+}
+
+.timetable tbody tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.subject-box {
+  padding: 8px;
+  border-radius: 8px;
+  background: #e8f0ff;
+}
+
+.subject-name {
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.teacher-name {
+  font-size: 12px;
+  color: #666;
+}
+
+.timing-note {
+  color: #555;
+  background: #f4f7fb;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.free-slot {
+  color: #9aa0a6;
+}
+
+footer {
+  background: #212529;
+  color: white;
+}
+
+@media print {
+  .navbar,
+  .dashboard-card,
+  .card:not(:last-child),
+  footer,
+  button {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+  }
+
+  .card {
+    box-shadow: none;
+  }
+
+  .timetable {
+    width: 100%;
+  }
+
+  .timetable th,
+  .timetable td {
+    min-width: auto;
+    font-size: 9pt;
+  }
+}
